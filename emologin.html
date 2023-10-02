@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Login and Registration Form in HTML & CSS | CodingLab </title>-->
+    <link rel="stylesheet" href="/static/css/pwd.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src='/static/js/pwd.js'></script>
+	<script>
+		$(function () {
+			$('#pword').emoji({place: 'after'});
+		})
+	</script>
+   </head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="active"> Sign In </h2>
+          <a href="http://127.0.0.1:5000/emosignup"><h2 class="inactive underlineHover">Sign Up </h2></a>
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <img src="/static/css/user.png" id="icon" alt="User Icon" />
+          </div>
+      
+          <!-- Login Form -->
+          <form action="http://127.0.0.1:5000/result" method="POST">
+            <input type="email" id="login" class="fadeIn second" name="email" placeholder="email">
+            <input id="pword" class="fadeIn third" name="pass" placeholder="password">
+            <input type="submit" class="fadeIn fourth" value="Log In">
+          </form>
+        </div>
+      </div>
+</body>
+</html>
